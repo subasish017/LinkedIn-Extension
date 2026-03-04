@@ -4,7 +4,11 @@
   "version": "1.0.0",
   "description": "AI-powered LinkedIn profile analysis with strength scoring and job matching",
   "permissions": ["activeTab", "scripting", "storage", "tabs"],
-  "host_permissions": ["https://www.linkedin.com/*"],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "http://localhost:8000/*",
+    "https://*/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
